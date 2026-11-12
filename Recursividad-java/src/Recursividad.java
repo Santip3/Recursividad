@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Recursividad {
 
     // ===================== FUNCIONES RECURSIVAS =====================
-
+    // básicamente fraccionar las operaciones //
     // 1. Factorial: n! = n * (n-1)!
     public static long factorial(int n) {
         if (n == 0 || n == 1) {      // caso base
@@ -22,7 +22,7 @@ public class Recursividad {
 
     // 3. Potencia: base^exp = base * base^(exp-1)
     public static long potencia(int base, int exponente) {
-        if (exponente == 0) {        // caso base: todo número elevado a 0 es 1
+        if (exponente == 0) {        // caso base: número elevado a 0 es 1
             return 1;
         }
         return base * potencia(base, exponente - 1); // llamada recursiva
@@ -39,7 +39,7 @@ public class Recursividad {
         return 1 + contarDigitos(n / 10); // llamada recursiva
     }
 
-    // 5. Invertir cadena: último caracter + invertir(el resto)
+    // 5. Invertir cadena: último carácter + invertir(el resto)
     public static String invertir(String cadena) {
         if (cadena.length() <= 1) {  // caso base: vacía o de 1 letra
             return cadena;
@@ -126,7 +126,7 @@ public class Recursividad {
                     break;
                 }
                 case 0:
-                    System.out.println("¡Hasta luego!");
+                    System.out.println("¡bye bye");
                     break;
                 default:
                     System.out.println("  Opción no válida. Elige un número del 0 al 5.");
